@@ -1,14 +1,14 @@
 ############### input data #################
 # release data downloaded to disk
-data_root: <data root>
-scene_list_file: <list file>
-rasterout_dir: <raster output dir>
-visiblity_cache_dir: <visiblity cache dir>
+data_root: /net/per440a/export/das22a/satoh-lab/frank/dataset/ScanNetPP/data
+scene_list_file: /net/per440a/export/das22a/satoh-lab/frank/scannetpp/semantic/configs/rasterize_scene_list.txt
+rasterout_dir: /net/per440a/export/das22a/satoh-lab/frank/dataset/ScanNetPP/my_rasterize
+visiblity_cache_dir: /net/per440a/export/das22a/satoh-lab/frank/dataset/ScanNetPP/my_visiblity_cache
 filter_scenes: []
 exclude_scenes: []
 # image type - iphone or dslr
-image_type: dslr
-undistort_dslr: true
+image_type: iphone
+undistort_dslr: false # true
 create_visiblity_cache_only: false
 ############### hyperparams #################
 # use topk views with visiblity of object vertices
@@ -28,7 +28,7 @@ obj_dist_thresh: 999
 # expand the bbox by this fraction in each direction
 bbox_expand_factor: 0.1
 ############### output #################
-save_dir_root: <output dir>
+save_dir_root: /net/per440a/export/das22a/satoh-lab/frank/dataset/ScanNetPP/my_semantics_2d
 save_dir: test_semantics_2d
 ############### dbg #################
 dbg:
