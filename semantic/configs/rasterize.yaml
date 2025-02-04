@@ -1,20 +1,20 @@
 # release data downloaded to disk
-data_root: <data root>
-scene_list_file: <list file>
+data_root: /net/per440a/export/das22a/satoh-lab/frank/dataset/ScanNetPP/data
+scene_list_file: /net/per440a/export/das22a/satoh-lab/frank/scannetpp/semantic/configs/rasterize_scene_list.txt
 
 filter_scenes: []
 
 # image type - iphone or dslr
-image_type: dslr
+image_type: iphone
 
 no_log: true
 
 # subsample images 
-subsample_factor: 20
+subsample_factor: 1
 # downsample images and rasterize
 image_downsample_factor: null
 
-rasterout_dir: <output dir>
+rasterout_dir: /net/per440a/export/das22a/satoh-lab/frank/dataset/ScanNetPP/my_rasterize
 
 limit_images: None
 
@@ -23,4 +23,4 @@ wandb_notes: null
 
 batch_size: 1
 limit_batches: null
-skip_existing: false
+skip_existing: true

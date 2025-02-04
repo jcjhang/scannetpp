@@ -1,15 +1,26 @@
-try:
-    from pytorch3d.structures import Meshes
-    from pytorch3d.utils import cameras_from_opencv_projection
-    from pytorch3d.renderer import (
-        RasterizationSettings, 
-        MeshRasterizer,  
-        fisheyecameras
-    )
-    import torch
-    device = torch.device("cuda:0")
-except:
-    pass
+# try:
+#     from pytorch3d.structures import Meshes
+#     from pytorch3d.utils import cameras_from_opencv_projection
+#     from pytorch3d.renderer import (
+#         RasterizationSettings, 
+#         MeshRasterizer,  
+#         fisheyecameras
+#     )
+#     import torch
+#     device = torch.device("cuda:0")
+# except:
+#     pass
+
+from pytorch3d.structures import Meshes
+from pytorch3d.utils import cameras_from_opencv_projection
+from pytorch3d.renderer import (
+    RasterizationSettings, 
+    MeshRasterizer,  
+    fisheyecameras
+)
+import torch
+device = torch.device("cuda:0")
+
 import numpy as np
 import cv2
 
