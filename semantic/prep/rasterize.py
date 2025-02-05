@@ -66,6 +66,8 @@ def main(cfg : DictConfig) -> None:
             image_list = [i.split('video/')[-1] for i in image_list]
         if image_list[0].startswith('dslr/'):
             image_list = [i.split('dslr/')[-1] for i in image_list]
+        if image_list[0].startswith('iphone/'):
+            image_list = [i.split('iphone/')[-1] for i in image_list]
 
         intrinsic_mat = camera_to_intrinsic(colmap_camera)
         img_height, img_width = colmap_camera.height, colmap_camera.width
