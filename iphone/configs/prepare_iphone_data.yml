@@ -1,0 +1,15 @@
+# extract RGB frames
+extract_rgb: true
+# extract anonymization masks
+extract_masks: false
+# extract depth frames
+extract_depth: false
+
+# folder where the data is downloaded
+data_root: /media/public_dataset2/ScanNet++_updated
+
+scene_list_file: /media/Pluto/frank/3D-RS/third_party/ScanNetPP/iphone/downloaded_scene_list.txt
+
+# splits: [nvs_sem_train, nvs_sem_val]
+
+# scene_ids: [ebff4de90b]

@@ -1,6 +1,6 @@
 # release data downloaded to disk
-data_root: /net/per440a/export/das22a/satoh-lab/frank/dataset/ScanNetPP/data
-scene_list_file: /net/per440a/export/das22a/satoh-lab/frank/scannetpp/semantic/configs/rasterize_scene_list.txt
+data_root: /media/public_dataset2/ScanNet++_updated/data
+scene_list_file: /media/Pluto/frank/3D-RS/third_party/ScanNetPP/iphone/downloaded_scene_list.txt
 
 filter_scenes: []
 
@@ -14,7 +14,7 @@ subsample_factor: 1
 # downsample images and rasterize
 image_downsample_factor: null
 
-rasterout_dir: /net/per440a/export/das22a/satoh-lab/frank/dataset/ScanNetPP/my_rasterize
+rasterout_dir: /media/public_dataset2/ScanNet++_updated/my_rasterize
 
 limit_images: None
 
